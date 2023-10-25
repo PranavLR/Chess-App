@@ -1,0 +1,29 @@
+.chessboard {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin: auto;
+}
+
+.chessboard-row {
+  display: flex;
+}
+
+.chessboard-square {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  line-height: 50px;
+  border: 1px solid #000;
+}
+
+.even {
+  background-color: #fff;
+}
+
+.odd {
+  background-color: #000;
+}
+.clicked {
+  background-color: #f00;
+}

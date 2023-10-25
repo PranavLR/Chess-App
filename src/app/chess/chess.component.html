@@ -1,0 +1,21 @@
+<div class="chessboard">
+  <div class="chessboard-row"
+    *ngFor="let row of chessboard; let i = index">
+    
+    <div class="chessboard-square"
+      *ngFor="let col of row; let j = index"
+      [ngClass]="{ even: (i + j) % 2 === 0, odd: (i + j) % 2 !== 0 }" 
+      (click)="toggleSquareColor(squareRef)" #squareRef>
+    </div>
+    
+</div>
+</div>
+
+
+
+
+<!--! Another Logic to add BackgroundColor -->
+<!-- <div class="chessboard-square"
+  *ngFor="let col of row; let j = index"
+  [style.BackgroundColor]="col">
+</div> -->
